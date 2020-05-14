@@ -1,0 +1,349 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is Bot", "what is your age", "how old are you", "age?"],
+         "responses": ["I am 18 years old!", "18 years young!"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me Bot.", "I'm Bot!"],
+         "context_set": ""
+        },
+        {"tag": "country",
+         "patterns": ["Does Global Prime accept clients from any country","Do you accept clients from any country", "countries of operation", "countries?"],
+         "responses": ["Global Prime is not able to accept clients from North Korea, Iran, United States of America and Canada.",
+		 "We are not able to accept clients from North Korea, Iran, United States of America and Canada."],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["What are your market opening and closing times", "what are your hours", "hours of operation"],
+         "responses": ["Our MT4 servers are GMT +2 or GMT +3 depending on New York DST (Daylight Savings Time). This ensures a 5 daily candle week on the charts. Trading is blocked for 1-3 minutes daily to avoid slippage (all products except Cryptocurrencies). Trading times below are when trades can be executed. Forex Monday 00:01 - Friday 23:57 Daily trading break: 23:59 – 00:01 Metals Gold (XAUUSD)  Monday 01:00 - Friday 23:57 Daily trading break: 23:57 – 01:02 Silver (XAGUSD), Platinum (XPTUSD), Palladium (XPDUSD) Monday 01:00 - Friday 23:57 Daily trading break: 23:59 – 01:00 CFDs ASX 200 (AUS200): weekdays 00:50 - 24:00 Brent Crude (UKOIL): weekdays 03:00 - 24:00 All others: weekdays 01:00 - 24:00 Cryptocurrencies Monday to Friday (no breaks): 00:00 - 24:00"],
+         "context_set": ""
+        },
+		{"tag": "islamic",
+         "patterns": ["Does Global Prime offer an Islamic swap free account", "Do you offer an Islamic swap free account", "what about Islamic swap free account?"],
+         "responses": ["No, Global Prime does not offer clients an Islamic swap free account because we do not have an account that complies with Sharia Law, particularly with regard to the giving and receiving of interest."],
+         "context_set": ""
+        },
+		{"tag": "swap",
+         "patterns": ["Does Global Prime offer swap free accounts", "what about swap free accounts", "swap free accounts","Do you offer swap free accounts"],
+         "responses": ["No, Global Prime does not offer swap free accounts.","No, We does not offer swap free accounts.","No"],
+         "context_set": ""
+        },
+		{"tag": "details",
+         "patterns": ["How do I change my details", "want to change my details", "change my details"],
+         "responses": ["If you need to update your account information please complete the Change of Details Request Form and send the completed form to support@globalprime.com so we can update your details."],
+         "context_set": ""
+        },
+		{"tag": "active",
+         "patterns": ["How long do my accounts stay active", "what will be the life time of my account"],
+         "responses": ["Live MT4 trading accounts never get closed in general. If there are no new trades on a demo account for 30 days, the demo account will be auto-closed."],
+         "context_set": ""
+        },
+		{"tag": "documents",
+         "patterns": ["what documents are necessary for account opening", "What documents do I need to open an account at Global Prime"],
+         "responses": ["To open an account with Global Prime we require identity documents (ID), you will need the following documents to upload (unless electronically verified):Proof of Identity – an official government ID that contains the client’s name, date of birth, and photo. For example, a Passport, a National ID card or Driver’s license.Proof of Address – a document that contains address of the client. For example, a Bank statement, Utility bill or Driver’s license. This document must with issued within the last three months. Please make sure that the forms you submit are correct and not missing any vital information, as any mistakes will delay our processes."],
+         "context_set": ""
+        },
+		{"tag": "bank",
+         "patterns": ["Add new bank details", "How to Add new bank details"],
+         "responses": ["Login https://secure.globalprime.com/ then, Go to Funds --> Bank Accounts --> Add New Record, Fill in the all the applicable fields; upload a Bank Statement if there are any abbreviations and click Submit --> Congratulations, your Bank Account is nominated. As long as you are certain all the necessary fields are correct as advised by your Bank's SSI (standard settlement instructions) you can now submit withdrawals to that nominated Bank Account."],
+         "context_set": ""
+        },
+		{"tag": "credit card",
+         "patterns": ["Credit card withdrawal", "how to withdraw credit card"],
+         "responses": ["If you fund your account by credit card, then make a profit and would like to withdraw funds: the original amount deposited by credit card will be refunded to the same card first and profit will be sent to a bank account by bank wire transfer."],
+         "context_set": ""
+        },
+		{"tag": "delete",
+         "patterns": ["Delete bank account", "how to Delete bank account","what steps should i follow to delete bank account"],
+         "responses": ["Log into the Client Portal, Go to Funds (top of screen) --> Bank Accounts, Move your cursor adjacent to the Bank Account you want to Delete. Use the Bank Account Information button --> Delete Account."],
+         "context_set": ""
+        },
+		{"tag": "fund account",
+         "patterns": ["How do I fund my account", "by which means I fund my account", "fund my account"],
+         "responses": ["Global Prime offers zero fee funding methods via: Bank wire, Visa, Mastercard and Neteller."],
+         "context_set": ""
+        },
+		{"tag": "withdrawal",
+         "patterns": ["How do I make withdrawal requests", "how to withdraw from my account"],
+         "responses": ["Withdrawal requests can be made from inside the Client Portal. 1. Select Funds > Withdrawal 2. Select the account you would like to withdraw from and where you would like the funds to go into. Please note any withdrawal made within 120 days of a credit card deposit will be refunded back to the card first."],
+         "context_set": ""
+        },
+		{"tag": "register",
+         "patterns": ["How do I register my credit card to fund my account", "how to register credit card", "credit card registration for account funding"],
+         "responses": ["Registering a credit card is not required. All verification is electronic via a secure third-party, online payment portal. Card numbers are only required through the secure portal and not retained by Global Prime. The credit card should have your full name on it and it should match the name on your account."],
+         "context_set": ""
+        },
+		{"tag": "fast",
+         "patterns": ["How fast does Global Prime process credit card funding", "how long it takes to process credit card funding","How fast do you process credit card funding"],
+         "responses": ["When a client requests funding of an account through credit card, requests are automated and generally instant. Delays may occur is clients are funding an archived trading account, in which it needs to be un-archived and funds allocated."],
+         "context_set": ""
+        },
+		{"tag": "international",
+         "patterns": ["How long do international bank withdrawals take", "How much time is required for international bank withdrawals"],
+         "responses": ["International bank withdrawals take 1-5 business days."],
+         "context_set": ""
+        },
+		{"tag": "international",
+         "patterns": ["How long do international bank withdrawals take", "How much time is required for international bank withdrawals"],
+         "responses": ["International bank withdrawals take 1-5 business days.","Generally, international bank withdrawals take 1-5 business days. Some of our clients receive their international withdrawals within hours!"],
+         "context_set": ""
+        },
+		{"tag": "nominated bank",
+         "patterns": ["If I want to change my nominated bank, how do I go about the process", "How to change my nominated bank"],
+         "responses": ["It all depends on the receiving bank. We process all withdrawals by next business day."],
+         "context_set": ""
+        },
+		{"tag": "funding",
+         "patterns": ["What is my funding account number", "Want to know about my funding account number"],
+         "responses": ["Your funding account number is the 6 digit number starting with 9. This number is also your MT4 account number. This number will be provided to you once your account is approved and funding instructions have been sent to you."],
+         "context_set": ""
+        },
+		{"tag": "deposit process",
+         "patterns": [ "What is the deposit process with Global Prime","What is your deposit process"],
+         "responses": ["Bank wire: Global Prime accepts Bank Wire transfers in either AUD, USD, GBP, EUR, SGD, CAD. Global Prime also accepts credit card deposits in AUD, USD, GBP ,EUR, SGD and CAD. Bank Wire transfers are generally free unless processed via an Intermediary Bank, in which case we have no control over the charges - these depend on the relationship between banks. Credit Card: Funds deposited via credit card will be refunded back to your card up to the amount initially deposited should you request a withdrawal within 120 days. Profits will be sent to your bank account via Bank Wire. All withdrawals are processed by next business day."],
+         "context_set": ""
+        },
+		{"tag": "withdrawal process",
+         "patterns": [ "What is the withdrawal process with Global Prime","What is your withdrawal process"],
+         "responses": ["Withdrawal: Neteller is instant after we process. Others methods usually arrive to clients within a couple of business days but depending on the clients bank there may be delays (i.e. how the bank processes a refund to credit cards). Bank Wire, usually 1-5 business days."],
+         "context_set": ""
+        },
+		{"tag": "deposit withdrawal",
+         "patterns": ["What is the deposit, withdrawal process with Global Prime", "What is the deposit/withdrawal process with Global Prime","What is your deposit/withdrawal process"],
+         "responses": ["Bank wire: Global Prime accepts Bank Wire transfers in either AUD, USD, GBP, EUR, SGD, CAD. Global Prime also accepts credit card deposits in AUD, USD, GBP ,EUR, SGD and CAD. Bank Wire transfers are generally free unless processed via an Intermediary Bank, in which case we have no control over the charges - these depend on the relationship between banks. Credit Card: Funds deposited via credit card will be refunded back to your card up to the amount initially deposited should you request a withdrawal within 120 days. Profits will be sent to your bank account via Bank Wire. All withdrawals are processed by next business day. Withdrawal: Neteller is instant after we process. Others methods usually arrive to clients within a couple of business days but depending on the clients bank there may be delays (i.e. how the bank processes a refund to credit cards). Bank Wire, usually 1-5 business days."],
+         "context_set": ""
+        },
+		{"tag": "minimun deposit",
+         "patterns": ["What is the minimum deposit", "What is the least deposit","What is the minimum deposit needed","What is the minimum first-time deposit"],
+         "responses": ["Minimum first-time deposit for a Global Prime account is AUD$200"],
+         "context_set": ""
+        },
+		{"tag": "fees",
+         "patterns": ["Are there deposit and withdrawal fees", "What is your deposit fees","how much you charge at the time of deposit","how much you charge at the time of withdrawal"],
+         "responses": ["Global Prime does not charge any fees for deposits or withdrawal. However, please note that payment to and from international banks may incur a transfer fee which are independent of Global Prime. Global Prime does not take responsibility for such fees. **Deposit facilities are to be used for trading only. Please keep in mind that we cover the merchant fee’s for Neteller and Credit Card deposits on behalf of our clients - in some cases up to 4% of the deposit amount. We are happy to do so as long as our clients are using the facility to deposit funds to trade with and not to game the system for their own benefit such as reward points on their account. If a client deposits funds via Neteller or Credit Card and then requests a withdrawal of these funds with no trading (or minimal trading) on their account then we reserve the right to charge the applicable merchant fees to the clients account upon their withdrawal. We will actively notify clients where we find suspicious activity. Recurring cases of abuse will see the clients account immediately closed."],
+         "context_set": ""
+        },
+		{"tag": "general commission",
+         "patterns": ["Does Global Prime take a commission", "Do you take a commission","what is your commission percentage"],
+         "responses": ["Global Prime takes a general commission of $7 per 100k (1 lot) traded round turn (7 AUD, 7 USD, 6.2 EUR, 5.4 GBP, 9.5 SGD, 9 CAD). This translates to $0.70 for 0.10 lots and $0.07 for 0.01 lots. Commission can be negotiated for clients trading more than 500 lots per month."],
+         "context_set": ""
+        },
+		{"tag": "commission",
+         "patterns": ["Where can I see commission on trades", "where can i see commission on trades"],
+         "responses": ["Once an order has been placed, you need to navigate to the ‘Terminal’ window and click the ‘Trade’ tab. Your commission charge will be seen near the bottom right. Bear in mind that commission charge is dependent on your lot size, and the currency your account is trading in."],
+         "context_set": ""
+        },
+		{"tag": "refer",
+         "patterns": ["How can I refer a friend", "How can I refer a colleague","How can I refer someone","how to refer someone","what is the benefit of refering someone"],
+         "responses": ["Yes. Nothing gives us more pride and joy than you recommending us to your family, friends or colleagues. For every successful friend you refer to us, receive AUD$100 credited to your trading account. To refer a friend, log into the Client Portal and click on this refer a friend"],
+         "context_set": ""
+        },
+		{"tag": "support",
+         "patterns": ["How Do I contact support", "want some support about an issue","want to connect to support"],
+         "responses": ["Getting in contact with support is very simple. Live Chat is always accessible on the bottom right of the screen. You can also contact us by email – support@globalprime.com or by phoning +612 8379 3622."],
+         "context_set": ""
+        },
+		{"tag": "login",
+         "patterns": ["Resend login credentials", "how to get login credentials","how to get login instructions"],
+         "responses": ["Log into the client portal: https://secure.globalprime.com/ . Navigate to the Action column and use the Action button adjacent to the desired MT4 account --> Click Resend Login Instructions --> Click Okay."],
+         "context_set": ""
+        },
+		{"tag": "full address",
+         "patterns": ["What is Global Prime's address and phone number", "What is your address and phone number", "where are you located"],
+         "responses": ["Global Prime (headquarters): Suite 604, 35 Grafton St Bondi Junction NSW 2022, Australia. Address of Vanuatu entity: Govant Building, BP 1276 Port Vila Vanuatu. Phone number: (+612) 8379 3622. "],
+         "context_set": ""
+        },
+		{"tag": "address",
+         "patterns": ["What is Global Prime's address", "What is your address", "where are you located"],
+         "responses": ["Global Prime (headquarters): Suite 604, 35 Grafton St Bondi Junction NSW 2022, Australia. Address of Vanuatu entity: Govant Building, BP 1276 Port Vila Vanuatu."],
+         "context_set": ""
+        },
+		{"tag": "phone number",
+         "patterns": ["What is Global Prime's phone number", "What is your phone number","What is your contact number" ],
+         "responses": ["Phone number: (+612) 8379 3622."],
+         "context_set": ""
+        },
+		{"tag": "ABN",
+         "patterns": ["What is Global Prime's ABN and is it regulated", "What is your ABN and is it regulated" ],
+         "responses": ["Global Prime Pty Ltd, ABN 74 146 086 017, Global Prime holds an Australian Financial Services License (AFSL) to carry on financial services business in Australia, limited to the financial services covered by its AFSL no.385620. Gleneagle Securities PTY Limited trading as Global Prime FX is a registered Vanuatu company (Company Number 40256) and is regulated by the VFSC."],
+         "context_set": ""
+        },
+		{"tag": "customer support",
+         "patterns": ["What kind of support will I receive", "What kind of customer support will I receive","What kind of support will be given" ],
+         "responses": ["We have 24/5 customer support via chat, phone or email. We’re famous for our approachable customer service and honesty with our clients."],
+         "context_set": ""
+        },
+		{"tag": "services",
+         "patterns": ["What service(s) do you provide", "What service(s) do you offer","type of service(s) you offer" ],
+         "responses": ["Global Prime is an international foreign exchange broker that caters to retail, wholesale and institutional clients. Global Prime provides prices, and provides accessibility for clients to fill trades. Global Prime gives our clients access to major and minor world currency pairs and precious metals."],
+         "context_set": ""
+        },
+		{"tag": "owns",
+         "patterns": ["Who owns Global Prime", "Who owns this business","who is the owner" ],
+         "responses": ["Global Prime is a division of Gleneagle Securities. Our Australian Business Number is 74 146 086 017."],
+         "context_set": ""
+        },
+		{"tag": "demo account",
+         "patterns": ["Activating a demo account", "How to Activate a demo account","what is demo account" ],
+         "responses": ["1.Apply for demo account: https://secure.globalprime.com/AccountGP/Demo 2.Fill out personal details and click 'Start Trading - Risk Free' 3.You will receive an email with an activation link. Click the activation link. 4.You will receive another email with the login details for your demo account and download links for MT4. 5.Once you have downloaded MT4, use the demo account number and password to login and begin trading. 6.You should have also received another email with your Client Portal login. Head to the Client Portal to create more MT4 demo accounts or to open a live account. "],
+         "context_set": ""
+        },
+		{"tag": "EA",
+         "patterns": ["Can I use EA's to trade on MT4", "Shall we use EA's to trade on MT4" ],
+         "responses": ["Yes, you are allowed to use any and all EAs (Expert Advisors) available by third party providers. We do not restrict the use of any strategy or EA. However, we do not advise on the installation nor the use of particular EAs The only aspect of EAs we do restrict is the amount of order modifications allowed per day. We request that EAs or scripts do not exceed 5,000 order modifications per day."],
+         "context_set": ""
+        },
+		{"tag": "password",
+         "patterns": ["Change password in MT4", "How to Change password in MT4","how to Change credentials in MT4" ],
+         "responses": ["Open MT4 Go to 'Tools' and 'Options' then select 'Server' tab then click 'Change' Enter current password then choose a new password, confirm it by entering it again and click OK. If the password is successful the change will be noted in the Journals Tab of the Terminal Window."],
+         "context_set": ""
+        },
+		{"tag": "MT4 account",
+         "patterns": ["Create a new MT4 account and make it active", "How to Create a new MT4 account and make it active","how to create new MT4 account"],
+         "responses": ["Login https://secure.globalprime.com/ Go to Trading Accounts --> Click '+Request New Account' 3.Select the Currency and Submit. 4.The New MT4 Account will appear at the bottom of the list as 'Requested' 5.From your existing MT4 Account use the Action Button and conduct a MT4 to MT4 Transfer --> Select the Target New MT4 Account --> Choose an amount and Submit. 6.The New MT4 Account will be Active --> use the Action button and Resend the Login Details to Log into the New MT4 Account --> The Account is now ready!"],
+         "context_set": ""
+        },
+		{"tag": "pc",
+         "patterns": ["Creating a demo account via MT4 (PC)", "how to Create a demo account via MT4 (PC)","demo account via MT4" ],
+         "responses": ["Open your MT4 Application. Go to File --> Open an Account. In Trading Servers select the GlobalPrime-Demo and click Next. Note: Ping should be visible as this will indicate that your MT4 can detect the Demo Server. Select 'New Demo Account' and click Next. Fill in the details, upon correct data entry the Next Button will become interactable, click Next. Your Demo will now be created and you'll have the login details."],
+         "context_set": ""
+        },
+		{"tag": "ios",
+         "patterns": ["Creating a demo account via MT4 (IOS)", "how to Create a demo account via MT4 (IOS)","demo account via MT4"  ],
+         "responses": ["Click the '+' sign (1) and then select 'Open a demo account' (2) Type in Global Prime or similar (1) and select the GlobalPrime -Demo (2) Fill in your correct details and select the currency, desired leverage (1:100 or 1:200) and the deposit size. (1)(Note - if the details are incorrect the registration will not work). When that is done, click 'Register' (2) The demo will be created and you'll see it in your accounts (3), Copy the password (2) and Click Done."],
+         "context_set": ""
+        },
+		{"tag": "MT4 login",
+         "patterns": ["Demo account MT4 login", "how to login to MT4 account" ],
+         "responses": ["Download MT4 by clicking the desired platform. Demo Account Number and Password provided by email.Run the installer, click 'Next'. Close any default browsers that open up. These are marketing links to the MQL4/5 Community. Click Finish, When  MT4 opens up it will immediately open to this page, press cancel. This window (red) will then open automatically, Fill in the details (purple box) with the MT4 Account Number and Password.  Click Login.When you can see your demo account number on the top left (1), your demo account name and number in the Navigator Window (2) and Connection (green and red with data moving) (3) you have successfully logged into the demo. Happy Trading!"],
+         "context_set": ""
+        },
+		{"tag": "troubleshooting",
+         "patterns": ["Demo trouble shooting", "how to do troubleshooting" ],
+         "responses": ["TROUBLESHOOTING Option(1) If the 'Next' button is inactive its likely due to a 'space' or additional symbol which is causing it to remain inactive. If this is the case please review the details in the E-Mail and Phone Number section as this is likely the cause of the error. (See below). Option(2) Move back to the Trading Server's option and create a new server called demo.globalprime.com.au . Choose that option when creating a demo and then try again. Option(3) Disable your firewall temporarily to see if there is a block on MT4 preventing the 'Next' button from activating. Disable your AV temporarily and repeat the same process. If the 'Next' button persists in not activating there is likely a proxy setting that is blocking port 443 (standard MT4 port) from being accessed."],
+         "context_set": ""
+        },
+		{"tag": "installation",
+         "patterns": ["How do I install MT4 on my PC if the previous installation failed", "MT4 installation guidelines","Who to install MT4" ],
+         "responses": ["If a previous installation of MT4 failed to work on your PC we suggesting reinstalling MT4 into another directory in your PC. For example, if the default directory path is c:/programsx86/global, you can change it by clicking 'Settings' in the installation setup and create a new path by creating a new folder in the previous directory, for instance c:/programsx86/global/globalprime. Alternatively, you can completely uninstall MT4 via Control Panel > Programs > Uninstall Programs > by selecting MT4 there and following the prompts and then run the MT4.exe again."],
+         "context_set": ""
+        },
+		{"tag": "place trades",
+         "patterns": ["How do I place trades", "How do i trade","trading on MT4" ],
+         "responses": ["Place trades on MT4 by clicking ‘New Order’ or by double-clicking the symbol you want to trade on the ‘Market Watch’ window. Alternatively, on the window for the pair you want to trade you can right click and turn on One-click Trading. This type of trading opens up the ‘Order’ and allows you to place a trade from a more convenient location.Using the One-click trading option prevents setting up ‘Pending Orders’."],
+         "context_set": ""
+        },
+		{"tag": "reset password",
+         "patterns": ["How do I reset my master password for my MetaTrader4 account", "How do I reset my master password" ],
+         "responses": ["If you just wish to change your current password, navigate to Tools > Options > Server and follow the prompts as required. Alternatively, you can access LiveChat on our website and talk with one of our staff to assist in having your password reset."],
+         "context_set": ""
+        },
+		{"tag": "balance",
+         "patterns": ["How do I view my account balance in MetaTrader4", "How do I view my account balance","view my account balance" ],
+         "responses": ["To view your account balance in MetaTrader4, simply open up the program and hit ‘View’ and click on ‘Terminal’, alternatively you can just use the ‘Ctrl-T’ key press. The terminal window should open up near the bottom of your screen. In the ‘Trade’ tab you’ll see your Balance, Equity, Margin, Free Margin and Margin level."],
+         "context_set": ""
+        },
+		{"tag": "history",
+         "patterns": ["How do I view my trading history on the MetaTrader4 platform", "How do I view my trading history ","my trading history on the MetaTrader4 platform" ],
+         "responses": ["The Global Prime MT4 platform records all trading activities in the ‘Account History’ tab of the trading Terminal. It is usually located at the bottom of your MT4 screen. From that tab you can see real-time profit and loss, margin availability, account balances, swap costs and all historical transaction details. These details can all be saved on your PC as records without logging back into the MT4 program by right clicking on any of the orders and saving the report."],
+         "context_set": ""
+        },
+		{"tag": "leverage",
+         "patterns": ["How do I view the current leverage on my account", "view the current leverage on my account" ],
+         "responses": ["Open MT4 and go to 'View > Navigator' and hover your mouse pointer over your account. A box will pop-out displaying your leverage (e.g. 1:100)."],
+         "context_set": ""
+        },
+		{"tag": "positions open",
+         "patterns": ["How long can I keep my positions open" ],
+         "responses": ["You can keep your positions open for as long as you deem fit, or as long as your margin stays within acceptable levels on the MT4 platform."],
+         "context_set": ""
+        },
+		{"tag": "time zone",
+         "patterns": ["What time zone is Global Prime's server in" ],
+         "responses": ["Our MT4 servers are GMT +2 or GMT +3 depending on New York DST (Daylight Savings Time). This ensures a 5 daily candle week."],
+         "context_set": ""
+        },
+		{"tag": "installing EA",
+         "patterns": ["Installing an EA on MT4 desktop" ],
+         "responses": ["1 - Open MT4 Desktop. 2 - Right-click the 'Expert Advisors' in the 'Navigator' window. 3 - Select 'Create in MetaEditor'. 4 - Once MetaEditor is prompted, select 'Cancel' on the wizard pop up windows. 5 - Click 'File' --> 'Open' . 6 - Find your installed EA from its folder"],
+         "context_set": ""
+        },
+		{"tag": "mobile platforms",
+         "patterns": ["Is my Global Prime account accessible via mobile platforms" ],
+         "responses": ["Yes, your Global Prime account is accessible via iPhone/iPad and Android platforms with the MT4 Mobile App. If any errors are encountered please try reinstalling the application"],
+         "context_set": ""
+        },
+		{"tag": "mobile platforms",
+         "patterns": ["Is my Global Prime account accessible via mobile platforms" ],
+         "responses": ["Yes, your Global Prime account is accessible via iPhone/iPad and Android platforms with the MT4 Mobile App. If any errors are encountered please try reinstalling the application"],
+         "context_set": ""
+        },
+		{"tag": "marketwatch",
+         "patterns": ["Marketwatch show all symbols","how Marketwatch show all symbols" ],
+         "responses": ["Open MT4 Make sure the Martetwatch is toggled by going to View, and identifying that the Marketwatch is enabled; by default it should be to the left of your screen.In the Marketwatch, right-click and click show all."],
+         "context_set": ""
+        },
+		{"tag": "chart time",
+         "patterns": ["On MetaTrader4 can I change my chart time","how can I change my chart time","how to change my chart time" ],
+         "responses": ["Unfortunately, the trading platform time cannot be changed as it is pegged to New York 5pm close. However, you can download local time indicators, which overlay the chart or add data. MT4 servers are GMT +2 or GMT +3 depending on New York DST (Daylight Savings Time). This ensures a 5 daily candle week."],
+         "context_set": ""
+        },
+		{"tag": "swap rates",
+         "patterns": ["On MetaTrader4 how do I find the swap rates","where to find swap rates","how do I find the swap rates" ],
+         "responses": ["To find the swap rates for currency pairs go to the ‘Market Watch Area’, right click and however over ‘Symbols’. A new window will open up that shows all available currency pairs, highlight the pair you wish to find the swaps for and click properties. The swap information and other relevant data should pop up in a new window."],
+         "context_set": ""
+        },
+		{"tag": "currency pairs",
+         "patterns": ["On MetaTrader4 how do I view all available currency pairs","how do I view all available currency pairs" ],
+         "responses": ["To view all currency pairs in MT4 simply right click on the market watch and then choose ‘Show All’. Global Prime FX’s MT4 platform has over 40 currency pairs to trade."],
+         "context_set": ""
+        },
+		{"tag": "invalid",
+         "patterns": ["On MetaTrader4 my account shows invalid","why my account shows invalid" ],
+         "responses": ["Normally, an ‘invalid’ message appears when your login or password information is incorrect. Things to check would be your login, password or the server address. This message can also appear for Demo accounts, and, are usually caused by inactivity in the Demo account. If you have forgotten your password please get in touch so we can help get you connected again."],
+         "context_set": ""
+        },
+		{"tag": "execution speeds",
+         "patterns": ["What are your execution speeds on the MT4 platform","execution speeds on the MT4 platform" ],
+         "responses": ["Our standard execution speed can differ depending on your location and distance to the Equinix Server in New York. On average it is about 100 milliseconds. If you use our VPS, this execution time can be reduced to 1 to 5 milliseconds."],
+         "context_set": ""
+        },
+		{"tag": "slippage",
+         "patterns": ["What is the cause of slippage on Global Prime's MT4 platform","What is the cause of slippage" ],
+         "responses": ["Any slippage that occurs can be due to: Execution time – If you place an order from your terminal and enough time passes for the price to move before it is executed you will be given the next best price, positive or negative.  Rejected orders – this usually happens when liquidity providers are unable to accept the order due to insufficient volume. The order is then relegated to the next best price offered by the liquidity provider and is filled."],
+         "context_set": ""
+        },
+		{"tag": "margin",
+         "patterns": ["Will trades close if they fall below a certain margin","What happen if trade fall below a certain margin" ],
+         "responses": ["As we use MT4 as a trading platform, our MT4 automatically ‘Margin Stops’ trades when the free margin falls below 100%. A ‘Margin Call’ occurs at 120% of margin and is indicated by red font in the platform. Be wary of trading when going into a news announcement as your margin could be in danger."],
+         "context_set": ""
+        },
+		{"tag": "Calculations",
+         "patterns": ["CFD Calculations","What is CFD Calculations" ],
+         "responses": ["All CFDs products except Energy (UKOIL, XTI) and Cryptocurrency XRP: the minimum lot size = 1. 1 lot = 1 contract: meaning 1 lot is equal to the quoted price (bid/ask) on the screen. Note: Oil, 1 lot = 1000 contracts, XRP is 100 contracts. Product currency, is the same as Margin Currency in product specifications. Margin currency will match the underlying instrument. e.g. US500, US30, NAS100 are USD; UK100 is GBP; AUS200 is AUD, etc. Example 1 - XTIUSD Two positions: 0.01 and 1.00 lot. Contract size = 1000 (1 lot = 1000 barrels).  Open Price = 57.500. Current price = 57.482 The difference between the open and current price is 0.018 Calculation = lot size x price difference x contract size 0.01 x -0.018 x 1000 = - 0.18, i.e. With 10 barrels (0.01 lot trade) = USD-$0.18. 1.00 x -0.018 x 1000 = -18.00, i.e. With 1000 barrels (1.0 lot trade) = USD-$18.00 Two positions: 1 and 2 lots. Contract size = 1 (1 lot = 1 contract) Open price is 3092.55 and the current price is 3092.10 The difference between the open and current price is 0.45 Calculation = lot size x price difference x contract size 1 x 0.45 x 1 = 0.45 (USD$0.45) 2 x 0.45 x 1 = -0.90 (USD$0.45)"],
+         "context_set": ""
+        },
+		{"tag": "cryptocurrency",
+         "patterns": ["CFD cryptocurrency swap calculation" ],
+         "responses": ["CFD Cryptocurrency swap calculations follows: Lots x Contract Size x End of Day Price x Swap Long or Short % / 100 / 360 Note: the swap for CFD Cryptocurrencies is annualized, thus the above calculation represents a daily fee. Also, Contract Sizes are 1 for all Cryptocurrencies except for XRPUSD, which is 100. As an example, if you have a short position of 1 lots (1 unit) of BTCUSD, with an end of day price of 10,000 USD, and the swap is -30.98 then: 0.5 lots x 1 x 10,000 USD x -30.98 / 100 / 360 = -4.30 USD This will also be converted into your account currency automatically. Note: triple swap charge takes place on Thursday for CFD Cryptocurrencies in MT4."],
+         "context_set": ""
+        },
+		{"tag": "latency",
+         "patterns": ["How do I test my latency to the MetaTrader4 server that Global Prime uses", "How do I test my latency to the MetaTrader4 server","How do I test my latency" ],
+         "responses": ["Conducting a Ping test is relatively easy: Firstly, click your Windows start button, in the search box type in cmd and click on 'cmd.exe' You should see something like this: C:\\users\\yourname , type ‘ping’ so it looks like this, C:\\users\\yourname>ping Hit spacebar once and type in the server you wish to ping. The next few lines will show in ms the minimum, maximum and average time it took for your computer to send and receive data from the server."],
+         "context_set": ""
+        }
+   ]
+}

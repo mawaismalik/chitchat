@@ -1,0 +1,5 @@
+python=3.6
+nltk
+tflearn
+tensorflow
+Flask>=1.0.0
