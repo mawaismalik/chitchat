@@ -77,12 +77,12 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-try:
-    model.load("model.h5")
-except:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    model.save("model.h5")
-    
+#try:
+model.load("model.h5")
+# except:
+#     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+#     model.save("model.h5")
+#
 
 
     
@@ -135,4 +135,4 @@ def main():
 
 
 if __name__=='__main__':
-	app.run().run(debug=True,port=5002)
+	app.run().run()
