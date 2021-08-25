@@ -1,5 +1,5 @@
 
 nltk
 tflearn
-tensorflow==1.14
+tensorflow==2.5.1
 Flask>=1.0.0
